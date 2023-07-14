@@ -81,47 +81,272 @@ header a{
   /*background image*/
 
 body{
-    background-image: url(../IMG/bg.avif);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: top;
-    animation: backwards;
-   
-}
-/*
-h2{
-   
-    display: flex;
-    justify-content: center;
-    margin-top: 25%;
-    font-family: 'Arial', serif;
-    color: rgb(118, 69, 21);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 900;
-    animation: text 19s 1;
     
-}
-
-h2 span{
-    display: inline-block;
-    transition: all 300ms linear;
-}
-
-
- h2 :hover{
-        cursor: pointer;
-        color: rgb(127, 91, 40);
-        margin-bottom: -40px;
-        letter-spacing: 25px;
-        margin-bottom: -40px;
-        letter-spacing: 8px;
-        margin-bottom: -40px;
-        text-overflow: clip;
+    background-color: rgb(145, 123, 106);
    
 }
-*/
 
-
+#image{
+    width: 100%;
+}
 
 /*cards*/
+
+.cards{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   justify-content: space-around;
+   margin-top: 5%;
+   margin-bottom: 10%;
+}
+  
+
+.cards2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: 10%;
+ }
+
+.cards, .cards2 :hover{
+   
+}
+
+.card1 {
+    background-image: url('../IMG/red-bean.jpeg');
+    position: relative;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .card1::before {
+    position: absolute;
+    content: "1";
+    color:  rgb(224, 204, 167);
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(102, 60, 37);
+    transition: all 0.5s;
+  }
+  
+  .card1::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+  
+  .card1::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+  }
+  
+  .card1:hover::before,
+  .card1:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+  }
+  
+  .card1:hover::before {
+    content: "Harvested With Care";
+    color: rgb(224, 204, 167);
+    letter-spacing: 3px;
+
+
+  }
+ 
+
+ 
+  
+
+.card2 {
+    background-image: url('../IMG/Green_bean.webp');
+    position: relative;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .card2::before {
+    position: absolute;
+    content: "2";
+    color:  rgb(224, 204, 167);
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(102, 60, 37);
+    transition: all 0.5s;
+  }
+  
+  .card2::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+  
+  .card2::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+  }
+  
+  .card2:hover::before,
+  .card2:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+  }
+  
+  .card2:hover::before {
+    content: "Peeled With Kindness";
+    color: rgb(224, 204, 167);
+    letter-spacing: 3px;
+
+  }
+ 
+
+.card3{
+    background-image: url('../IMG/brown-bean.jpeg');
+    position: relative;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .card3::before {
+    position: absolute;
+    content: "3";
+    color:  rgb(224, 204, 167);
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(102, 60, 37);
+    transition: all 0.5s;
+  }
+  
+  .card3::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+  
+  .card3::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+  }
+  
+  .card3:hover::before,
+  .card3:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+  }
+  
+  .card3:hover::before {
+    content: "Roasted With Love";
+    color: rgb(224, 204, 167);
+    letter-spacing: 3px;
+  }
+ 
+  
+
+.card4 {
+    background-image: url('../IMG/ground-bean.jpeg');
+    position: relative;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .card4::before {
+    position: absolute;
+    content: "4";
+    color:  rgb(224, 204, 167);
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(102, 60, 37);
+    transition: all 0.5s;
+  }
+  
+  .card4::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+  
+  .card4::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+  }
+  
+  .card4:hover::before,
+  .card4:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+  }
+  
+  .card4:hover::before {
+    content: "Grinded With Passion";
+    color: rgb(224, 204, 167);
+    letter-spacing: 3px;
+
+
+  }
+ 
+
+
+ 
+  
